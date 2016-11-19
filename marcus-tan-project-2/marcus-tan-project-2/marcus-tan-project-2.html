@@ -4,92 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<style>
-		button,
-		input {
-		  border: 0;
-		  padding: 0;
-		  cursor: pointer;
-		}
-
-		* {
-			box-sizing: border-box;
-			font-family: 'Montserrat', sans-serif;
-		}
-		
-		body {
-			background-color: #008dcd;
-		}
-
-		.site__wrapper {
-			width: 100%;
-			margin: 0 auto;
-			max-width: 1140px;
-			padding: 0 30px;
-		}
-
-		.img__wrap {
-			display: inline-block;
-			width: 49%;
-			padding: 10px;
-			cursor: pointer;
-		}
-
-		img {
-			max-width: 100%;
-		}
-
-		.heading {
-			text-align: center;
-			color: #fff;
-		}
-
-		.flex {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.flex__wrapper {
-			max-width: 50%;
-			background-color: #fff;
-			padding: 30px 20px 20px;
-			position: relative;
-			cursor: auto;
-		}
-
-		.modal {
-			display: none;
-			position: fixed;
-			width: 100%;
-			top: 90px;
-			left: 0;
-		}
-
-		.svg-close {
-			text-align: right;
-			position: absolute;
-			top: 0;
-			right: 5px;
-			cursor: pointer;
-			width: 100%;
-			z-index: 100;
-		}
-
-		.svg-close svg {
-			width: 20px;
-		}
-
-		.js--active {
-			display: block;
-		}
-
-		p {
-			font-size: 14px;
-		}
-	</style>
 	
 	<div class="site__wrapper">
 		<h1 class="heading">It's Gallery Time!</h1>
@@ -184,52 +101,6 @@
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script>
-		(function($){
-			'use strict';
-
-			var $img__wrap 	= $('img__wrap');
-			var $artwork 		= $('[data-artwork]');
-			var $modal 			= $('.modal');
-			var activeClass = "js--active";
-			var $close 			= $('.svg-close');
-
-			// click event listner
-			function artwork (){
-				$artwork.on('click', function(){
-					$(this)
-						.closest('.img__wrap')
-						.find($modal)
-						.show(200);
-				});
-			}
-
-			function hide(){
-				$modal.hide(200);
-			}
-
-			function closeButton(){
-				// close event listner
-				$close.on('click', function(){
-					hide();
-				});
-			}
-
-			function escapeKey(){
-				// escape key event listner
-				$('body').on('keyup',function(e) {
-					if (e.keyCode === 27) {
-						hide();
-					}
-				});
-			}
-
-			artwork();
-			escapeKey();
-			closeButton();
-
-		})(jQuery);
-	</script>
 
 	<!-- start firebase -->
 	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
@@ -244,5 +115,7 @@
 	  };
 	  firebase.initializeApp(config);
 	</script>
+
+	<script src="js/app.js"></script>
 </body>
 </html>

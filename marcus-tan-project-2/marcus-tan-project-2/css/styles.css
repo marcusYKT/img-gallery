@@ -1,0 +1,83 @@
+
+button,
+input {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-color: #008dcd;
+}
+
+.site__wrapper {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 30px;
+}
+
+.img__wrap {
+	display: inline-block;
+	width: 49%;
+	padding: 10px;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+.heading {
+	text-align: center;
+	color: #fff;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex__wrapper {
+	max-width: 50%;
+	background-color: #fff;
+	padding: 30px 20px 20px;
+	position: relative;
+	cursor: auto;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	width: 100%;
+	top: 90px;
+	left: 0;
+}
+
+.svg-close {
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 5px;
+	cursor: pointer;
+	width: 100%;
+	z-index: 100;
+}
+
+.svg-close svg {
+	width: 20px;
+}
+
+.js--active {
+	display: block;
+}
+
+p {
+	font-size: 14px;
+}
