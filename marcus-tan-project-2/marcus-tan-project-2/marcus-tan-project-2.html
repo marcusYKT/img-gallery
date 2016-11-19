@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+	<style>
+		button,
+		input {
+		  border: 0;
+		  padding: 0;
+		  cursor: pointer;
+		}
+
+		* {
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif;
+		}
+		
+		body {
+			background-color: #008dcd;
+		}
+
+		.site__wrapper {
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1140px;
+			padding: 0 30px;
+		}
+
+		.img__wrap {
+			display: inline-block;
+			width: 49%;
+			padding: 10px;
+			cursor: pointer;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		.heading {
+			text-align: center;
+			color: #fff;
+		}
+
+		.flex {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.flex__wrapper {
+			max-width: 50%;
+			background-color: #fff;
+			padding: 30px 20px 20px;
+			position: relative;
+			cursor: auto;
+		}
+
+		.modal {
+			display: none;
+			position: fixed;
+			width: 100%;
+			top: 90px;
+			left: 0;
+		}
+
+		.svg-close {
+			text-align: right;
+			position: absolute;
+			top: 0;
+			right: 5px;
+			cursor: pointer;
+			width: 100%;
+			z-index: 100;
+		}
+
+		.svg-close svg {
+			width: 20px;
+		}
+
+		.js--active {
+			display: block;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	</style>
+	
+	<div class="site__wrapper">
+		<h1 class="heading">It's Gallery Time!</h1>
+		
+		<div class="img__wrap">
+			<img src="img/img_1.jpg" alt="" data-artwork>
+
+			<div class="modal">
+				<div class="flex">
+					<div class="flex__wrapper">
+						<div class="svg-close">
+							<?xml version="1.0" encoding="utf-8"?>
+							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+							<path fill="#000" d="M30.721 6.774l-9.197 9.253 9.197 9.198c0.385 0.384 0.385 1.007 0 1.392l-4.176 4.175c-0.383 0.385-1.006 0.385-1.391 0l-9.182-9.182-9.127 9.182c-0.384 0.385-1.007 0.385-1.392 0l-4.175-4.175c-0.384-0.385-0.384-1.008 0-1.392l9.127-9.182-9.126-9.126c-0.384-0.384-0.384-1.007 0-1.392l4.175-4.175c0.384-0.385 1.007-0.385 1.392 0l9.11 9.11 9.199-9.253c0.385-0.385 1.008-0.385 1.391 0l4.176 4.175c0.383 0.385 0.383 1.008-0.001 1.392z"></path>
+							</svg>
+						</div>
+						<img src="img/img_1.jpg" alt="">
+						<p>
+							Yeah, you think youre pretty way up there but I can get you! Let me just add three more drops of explosive diarrhea. Oooo... Hey Princess Bubblegum, when we bring the dead back to life will it be filled with worms? No. If my decorpsinator serum works all the dead Candy People will look as young and healthy as you do. Pick up that platter, tough guy. Old Mr. Creampuff? We used to date. Somethings happening! 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="img__wrap">
+			<img src="img/img_2.jpg" alt="" data-artwork>
+
+			<div class="modal">
+				<div class="flex">
+					<div class="flex__wrapper">
+						<div class="svg-close">
+							<?xml version="1.0" encoding="utf-8"?>
+							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+							<path fill="#000" d="M30.721 6.774l-9.197 9.253 9.197 9.198c0.385 0.384 0.385 1.007 0 1.392l-4.176 4.175c-0.383 0.385-1.006 0.385-1.391 0l-9.182-9.182-9.127 9.182c-0.384 0.385-1.007 0.385-1.392 0l-4.175-4.175c-0.384-0.385-0.384-1.008 0-1.392l9.127-9.182-9.126-9.126c-0.384-0.384-0.384-1.007 0-1.392l4.175-4.175c0.384-0.385 1.007-0.385 1.392 0l9.11 9.11 9.199-9.253c0.385-0.385 1.008-0.385 1.391 0l4.176 4.175c0.383 0.385 0.383 1.008-0.001 1.392z"></path>
+							</svg>
+						</div>
+						<img src="img/img_2.jpg" alt="">
+						<p>
+							Come on, come on... Work. Algebraic! Wait, somethings wrong. SUGAR! Ew! Hey look, the decorpsinator serum is working! No, this is wrong. Theyre not coming back to life theyre still dead! The decorpsinator serum its incomplete! Must eat sugar! Youre grounded, Mister. Oh, this is really bad. Theyre going to be attracted to the Candy Kingdom! Why? Because the Candy People are made of sugar, ya ding dong! 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="img__wrap">
+			<img src="img/img_3.jpg" alt="" data-artwork>
+
+			<div class="modal">
+				<div class="flex">
+					<div class="flex__wrapper">
+						<div class="svg-close">
+							<?xml version="1.0" encoding="utf-8"?>
+							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+							<path fill="#000" d="M30.721 6.774l-9.197 9.253 9.197 9.198c0.385 0.384 0.385 1.007 0 1.392l-4.176 4.175c-0.383 0.385-1.006 0.385-1.391 0l-9.182-9.182-9.127 9.182c-0.384 0.385-1.007 0.385-1.392 0l-4.175-4.175c-0.384-0.385-0.384-1.008 0-1.392l9.127-9.182-9.126-9.126c-0.384-0.384-0.384-1.007 0-1.392l4.175-4.175c0.384-0.385 1.007-0.385 1.392 0l9.11 9.11 9.199-9.253c0.385-0.385 1.008-0.385 1.391 0l4.176 4.175c0.383 0.385 0.383 1.008-0.001 1.392z"></path>
+							</svg>
+						</div>
+						<img src="img/img_3.jpg" alt="">
+						<p>
+							Give me some sugar, baby. Chew on this! Good one, Finn. Quickly, to the kingdom! Get a life! All citizens of the Candy Kingdom! Report to the palace, immediately! Whoa! Hurry, sweet citizens. Alright, you heard the princess, everyone in! alright no pushing, come on! Dude, whats up? The princess will explain everything. Tree Trunks, get those hot buns in here, girl. Oh, I hope its not bad news.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="img__wrap">
+			<img src="img/img_4.jpg" alt="" data-artwork>
+
+			<div class="modal">
+				<div class="flex">
+					<div class="flex__wrapper">
+						<div class="svg-close">
+							<?xml version="1.0" encoding="utf-8"?>
+							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+							<path fill="#000" d="M30.721 6.774l-9.197 9.253 9.197 9.198c0.385 0.384 0.385 1.007 0 1.392l-4.176 4.175c-0.383 0.385-1.006 0.385-1.391 0l-9.182-9.182-9.127 9.182c-0.384 0.385-1.007 0.385-1.392 0l-4.175-4.175c-0.384-0.385-0.384-1.008 0-1.392l9.127-9.182-9.126-9.126c-0.384-0.384-0.384-1.007 0-1.392l4.175-4.175c0.384-0.385 1.007-0.385 1.392 0l9.11 9.11 9.199-9.253c0.385-0.385 1.008-0.385 1.391 0l4.176 4.175c0.383 0.385 0.383 1.008-0.001 1.392z"></path>
+							</svg>
+						</div>
+						<img src="img/img_4.jpg" alt="">
+						<p>
+							Did we get everyone? All present and accounted for. Thanks, Manfried. Youre welcome. Citizens, we are assembled here in the candy foyer for a momentous announcement. Tonight we are all going to have... a slumber party! What?! Wait! what about the zom. Go ahead and start partying. But, Princess, the undead Well be right back everyone. Whooo! Finn, the Candy People cant know about the zombies. Wha? If they knew, they would flip out. What do you mean, flip out? I mean they would flip out. Princess? Its me, Starchy the gravedigger.
+					</div>
+				</div>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		(function($){
+			'use strict';
+
+			var $img__wrap 	= $('img__wrap');
+			var $artwork 		= $('[data-artwork]');
+			var $modal 			= $('.modal');
+			var activeClass = "js--active";
+			var $close 			= $('.svg-close');
+
+			// click event listner
+			function artwork (){
+				$artwork.on('click', function(){
+					$(this)
+						.closest('.img__wrap')
+						.find($modal)
+						.show(200);
+				});
+			}
+
+			function hide(){
+				$modal.hide(200);
+			}
+
+			function closeButton(){
+				// close event listner
+				$close.on('click', function(){
+					hide();
+				});
+			}
+
+			function escapeKey(){
+				// escape key event listner
+				$('body').on('keyup',function(e) {
+					if (e.keyCode === 27) {
+						hide();
+					}
+				});
+			}
+
+			artwork();
+			escapeKey();
+			closeButton();
+
+		})(jQuery);
+	</script>
+
+	<!-- start firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyACxd06Pmv0-av1Yb8c8u7ezop5RsBxObs",
+	    authDomain: "img-gallery-930b8.firebaseapp.com",
+	    databaseURL: "https://img-gallery-930b8.firebaseio.com",
+	    storageBucket: "img-gallery-930b8.appspot.com",
+	    messagingSenderId: "798369424362"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+</body>
+</html>
